@@ -4,6 +4,9 @@ import "../globals.css";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { ConfigProvider } from "antd";
+import theme from "@/theme/themeConfig";
+import { Nav } from "@/component/header/nav";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -38,7 +41,12 @@ export default async function LocaleLayout({
         suppressHydrationWarning
       >
         <NextIntlClientProvider locale={locale} timeZone="Asia/Bangkok">
-          {children}
+          <ConfigProvider theme={theme}>
+            <Nav />
+            <div className="flex flex-col h-[calc(100vh-94px)] max-w-7xl mx-auto">
+              {children}
+            </div>
+          </ConfigProvider>
         </NextIntlClientProvider>
       </body>
     </html>

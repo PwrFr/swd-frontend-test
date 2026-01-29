@@ -1,10 +1,15 @@
 {
   "HomePage": {
-    "title": "To get started, edit the page.tsx file.",
-    "description": "Looking for a starting point or more instructions? Head over to {templates} or the {learning} center.",
-    "templates": "Templates",
-    "learning": "Learning",
-    "deployNow": "Deploy Now",
-    "documentation": "Documentation"
+    "title": "Home",
+    "description": "This project is a Job Application Test designed to showcase frontend development skills using React, Next.js, and Ant Design.",
+    "goToLayout": "Go to Layout & Style"
+  },
+  "LayoutPage": {
+    "title": "Layout & Style",
+    "description": "Manage your application's layout and styling here."
+  },
+  "FormPage": {
+    "title": "Form & Table",
+    "description": "Manage your forms and tables here."
   }
 }

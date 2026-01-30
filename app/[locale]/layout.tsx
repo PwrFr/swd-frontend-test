@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Kanit } from "next/font/google";
 import "../globals.css";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
@@ -7,14 +7,12 @@ import { routing } from "@/i18n/routing";
 import { ConfigProvider } from "antd";
 import theme from "@/theme/themeConfig";
 import { Nav } from "@/component/header/nav";
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import StoreProvider from "@/store/StoreProvider";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const kanit = Kanit({
+  weight: ["300", "400", "500", "600"],
+  subsets: ["latin", "thai"],
+  variable: "--font-kanit",
 });
 
 export const metadata = {
@@ -37,15 +35,17 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${kanit.variable} font-sans antialiased`}
         suppressHydrationWarning
       >
         <NextIntlClientProvider locale={locale} timeZone="Asia/Bangkok">
           <ConfigProvider theme={theme}>
-            <Nav />
-            <div className="flex flex-col h-[calc(100vh-94px)] max-w-7xl mx-auto">
-              {children}
-            </div>
+            <StoreProvider>
+              <Nav />
+              <div className="flex flex-col h-[calc(100vh-94px)] max-w-7xl mx-auto">
+                {children}
+              </div>
+            </StoreProvider>
           </ConfigProvider>
         </NextIntlClientProvider>
       </body>

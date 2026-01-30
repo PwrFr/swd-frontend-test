@@ -6,10 +6,74 @@
   },
   "LayoutPage": {
     "title": "การจัดวางและรูปแบบ",
-    "description": "จัดการการจัดวางและรูปแบบของแอปพลิเคชันที่นี่"
+    "description": "จัดการการจัดวางและรูปแบบของแอปพลิเคชันที่นี่",
+    "shapes": {
+      "square": "สี่เหลี่ยมจัตุรัส",
+      "circle": "วงกลม",
+      "oval": "วงรี",
+      "trapezoid": "สี่เหลี่ยมคางหมู",
+      "rectangle": "สี่เหลี่ยมผืนผ้า",
+      "parallelogram": "สี่เหลี่ยมด้านขนาน"
+    },
+    "controls": {
+      "moveShape": "เลื่อนรูปแบบ",
+      "movePosition": "เปลี่ยนตำแหน่ง"
+    }
   },
   "FormPage": {
-    "title": "แบบฟอร์มและตาราง",
-    "description": "จัดการแบบฟอร์มและตารางที่นี่"
+    "title": "จัดการข้อมูล",
+    "description": "แบบฟอร์มบันทึกข้อมูลและตารางแสดงรายชื่อ",
+    "fields": {
+      "title": "คำนำหน้า",
+      "firstName": "ชื่อจริง",
+      "lastName": "นามสกุล",
+      "birthday": "วันเกิด",
+      "nationality": "สัญชาติ",
+      "citizenId": "เลขบัตรประชาชน",
+      "gender": "เพศ",
+      "mobilePhone": "หมายเลขโทรศัพท์มือถือ",
+      "passportNo": "เลขหนังสือเดินทาง",
+      "expectedSalary": "เงินเดือนที่คาดหวัง",
+      "titlePlaceholder": "คำนำหน้า",
+      "nationalityPlaceholder": "-- กรุณาเลือก --",
+      "birthdayPlaceholder": "วว/ดด/ปปปป"
+    },
+    "buttons": {
+      "submit": "ส่งข้อมูล",
+      "update": "อัปเดตข้อมูล",
+      "reset": "ล้างข้อมูล",
+      "cancel": "ยกเลิก",
+      "newUser": "เพิ่มผู้ใช้ใหม่",
+      "edit": "แก้ไข",
+      "delete": "ลบ"
+    },
+    "table": {
+      "name": "ชื่อ-นามสกุล",
+      "gender": "เพศ",
+      "mobilePhone": "หมายเลขโทรศัพท์",
+      "nationality": "สัญชาติ",
+      "manage": "จัดการ"
+    },
+    "drawer": {
+      "createTitle": "สร้างผู้ใช้ใหม่",
+      "editTitle": "แก้ไขข้อมูลผู้ใช้"
+    },
+    "genderOptions": {
+      "male": "ชาย",
+      "female": "หญิง",
+      "unisex": "ไม่ระบุ"
+    },
+    "nationalities": {
+      "thai": "ไทย",
+      "american": "อเมริกัน",
+      "british": "อังกฤษ",
+      "chinese": "จีน",
+      "japanese": "ญี่ปุ่น"
+    },
+    "titleOptions": {
+      "mr": "นาย",
+      "mrs": "นาง",
+      "ms": "นางสาว"
+    }
   }
 }

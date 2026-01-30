@@ -58,7 +58,7 @@ export const Nav = () => {
   ) as MenuInfo | undefined;
 
   return (
-    <div className="sticky top-0 w-full bg-white px-4 pt-4 shadow">
+    <div className="sticky top-0 w-full bg-white px-4 pt-4 shadow z-50">
       <div className="flex gap-4 items-center justify-between">
         <Breadcrumb
           items={[

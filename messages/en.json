@@ -6,10 +6,74 @@
   },
   "LayoutPage": {
     "title": "Layout & Style",
-    "description": "Manage your application's layout and styling here."
+    "description": "Manage your application's layout and styling here.",
+    "shapes": {
+      "square": "Square",
+      "circle": "Circle",
+      "oval": "Oval",
+      "trapezoid": "Trapezoid",
+      "rectangle": "Rectangle",
+      "parallelogram": "Parallelogram"
+    },
+    "controls": {
+      "moveShape": "Move Shape",
+      "movePosition": "Move Position"
+    }
   },
   "FormPage": {
     "title": "Form & Table",
-    "description": "Manage your forms and tables here."
+    "description": "Manage your forms and tables here.",
+    "fields": {
+      "title": "Title",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "birthday": "Birthday",
+      "nationality": "Nationality",
+      "citizenId": "Citizen ID",
+      "gender": "Gender",
+      "mobilePhone": "Mobile Phone",
+      "passportNo": "Passport No",
+      "expectedSalary": "Expected Salary",
+      "titlePlaceholder": "Title",
+      "nationalityPlaceholder": "-- Please Select --",
+      "birthdayPlaceholder": "MM/DD/YYYY"
+    },
+    "buttons": {
+      "submit": "SUBMIT",
+      "update": "UPDATE",
+      "reset": "RESET",
+      "cancel": "Cancel",
+      "newUser": "New User",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "table": {
+      "name": "NAME",
+      "gender": "GENDER",
+      "mobilePhone": "MOBILE PHONE",
+      "nationality": "NATIONALITY",
+      "manage": "MANAGE"
+    },
+    "drawer": {
+      "createTitle": "Create a new user",
+      "editTitle": "Edit User"
+    },
+    "genderOptions": {
+      "male": "Male",
+      "female": "Female",
+      "unisex": "Unisex"
+    },
+    "nationalities": {
+      "thai": "Thai",
+      "american": "American",
+      "british": "British",
+      "chinese": "Chinese",
+      "japanese": "Japanese"
+    },
+    "titleOptions": {
+      "mr": "Mr.",
+      "mrs": "Mrs.",
+      "ms": "Ms."
+    }
   }
 }

@@ -86,10 +86,12 @@ export default function LayoutPage() {
 
   return (
     <div className="w-full max-w-6xl mx-auto p-8">
-      <Flex vertical gap={24}>
-        <header className="border-b border-slate-200 pb-4">
+      <Flex vertical gap={16}>
+        <header>
           <Title>{t("title")}</Title>
-          <Paragraph className="text-lg">{t("description")}</Paragraph>
+          <Paragraph className="text-lg opacity-70">
+            {t("description")}
+          </Paragraph>
         </header>
 
         <Flex vertical gap={24}>
@@ -109,7 +111,7 @@ export default function LayoutPage() {
                   </div>
                   <div className="w-full py-2 bg-slate-50 border-t border-slate-100 flex justify-center">
                     <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
-                      {item.title}
+                      {t(`shapes.${item.key}`)}
                     </span>
                   </div>
                 </Card>
@@ -124,7 +126,7 @@ export default function LayoutPage() {
                 className="text-[10px] font-bold tracking-widest uppercase"
               >
                 <LeftOutlined />
-                Move Shape
+                {t("controls.moveShape")}
               </Flex>
             </Button>
 
@@ -134,7 +136,7 @@ export default function LayoutPage() {
                 className="text-[10px] font-bold tracking-widest uppercase"
               >
                 <UpOutlined />
-                Move Position
+                {t("controls.movePosition")}
                 <DownOutlined />
               </Flex>
             </Button>
@@ -144,7 +146,7 @@ export default function LayoutPage() {
                 gap={8}
                 className="text-[10px] font-bold tracking-widest uppercase"
               >
-                Move Shape
+                {t("controls.moveShape")}
                 <RightOutlined />
               </Flex>
             </Button>

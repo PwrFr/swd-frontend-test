@@ -1,3 +1,4 @@
+"use client";
 import { useTranslations } from "next-intl";
 import { Typography, Button, Space } from "antd";
 import { ArrowRightOutlined } from "@ant-design/icons";

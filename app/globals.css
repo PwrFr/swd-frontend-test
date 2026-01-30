@@ -17,3 +17,46 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #6fda9c;
+  border-radius: 5px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #6fda9c;
+  border-radius: 50%;
+}
+
+.oval {
+  border-radius: 50%;
+  width: 200px;
+  height: 100px;
+  background-color: #6fda9c;
+}
+
+.trapezoid {
+  width: 200px;
+  height: 100px;
+  background-color: #6fda9c;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%);
+}
+
+.rectangle {
+  width: 200px;
+  height: 100px;
+  background-color: #6fda9c;
+  border-radius: 5px;
+}
+
+.parallelogram {
+  width: 200px;
+  height: 100px;
+  background-color: #6fda9c;
+  transform: skewX(20deg);
+  border-radius: 5px;
+}

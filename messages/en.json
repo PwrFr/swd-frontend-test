@@ -1,8 +1,18 @@
 {
   "HomePage": {
-    "title": "Home",
-    "description": "This project is a Job Application Test designed to showcase frontend development skills using React, Next.js, and Ant Design.",
-    "goToLayout": "Go to Layout & Style"
+    "title": "Welcome to the Frontend Test",
+    "description": "This project is a Job Application Test designed to showcase frontend development skills. Explore the features below to see the implementation of state management, localization, and complex UI layouts.",
+    "goToLayout": "Get Started",
+    "features": {
+      "stack_title": "Modern Stack",
+      "stack_desc": "Built with Next.js 15, React 19, and TypeScript for a robust and type-safe development experience.",
+      "redux_title": "Redux Toolkit",
+      "redux_desc": "Efficient and predictable state management handling complex forms and UI interactions.",
+      "i18n_title": "i18n Support",
+      "i18n_desc": "Seamless switching between English and Thai languages with shared localized messages.",
+      "design_title": "Premium Design",
+      "design_desc": "Polished and responsive user interface powered by Ant Design and custom CSS shapes."
+    }
   },
   "LayoutPage": {
     "title": "Layout & Style",

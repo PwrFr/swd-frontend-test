@@ -376,7 +376,6 @@ export default function FormPage() {
               </Flex>
             </Flex>
           </Form>
-          <pre>{JSON.stringify(formState, null, 2)}</pre>
         </Drawer>
         <Flex justify="end">
           <Button
